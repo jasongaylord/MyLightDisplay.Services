@@ -15,6 +15,7 @@ namespace MyLightDisplay.Services
         public int Year { get; set; }
         public string Length { get; set; }
         public DateTime DateStarted { get; set; }
+        public string DateStartedTimeString { get { return DateStarted.ToLongTimeString(); } }
         public int SequenceType { get; set; }
     }
 }
