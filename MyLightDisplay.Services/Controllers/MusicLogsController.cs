@@ -4,10 +4,12 @@ using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 
 namespace MyLightDisplay.Services.Controllers
 {
+    [EnableCors("*","*","*")]
     public class MusicLogsController : ApiController
     {
         private Lights db = new Lights();
